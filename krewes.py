@@ -23,14 +23,14 @@ krewes = {
          }
 
 def pop():
-    keys = list(krewes.keys())
-    keysLen = len(keys)
-    x = random.randint(0, keysLen - 1)
-    vals = list(krewes.get(keys[x]))
+    keys = list(krewes.keys()) #list of the periods 
+    keysLen = len(keys) 
+    x = random.randint(0, keysLen - 1) 
+    vals = list(krewes.get(keys[x])) #chooses random period 
     valsLen = len(vals)
-    y = random.randint(0, valsLen - 1)
+    y = random.randint(0, valsLen - 1) #chooses random student
     print(vals[y])
 
     
-pop()
+pop() #testcases
     
