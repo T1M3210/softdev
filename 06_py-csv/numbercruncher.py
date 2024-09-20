@@ -5,6 +5,8 @@
 # 2024-09-19
 # Time: N/A
 
+import random
+
 def randomOcc(str):
     
     infoByLine = str.split("\n")
@@ -29,7 +31,10 @@ def randomOcc(str):
     for x in range(0, len(conInfo) - 1, 2):
         jobDict[conInfo[x]] = conInfo[x+1]
     
+    print (conInfo)
     print(jobDict)
+    #print(random.choices(jobDict[x])) 
+    
 
 with open("occupations.csv", "r") as file:
     f = file.read()
