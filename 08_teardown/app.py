@@ -3,10 +3,9 @@
 '''
 DISCO:
 <note any discoveries you made here... no matter how small!>
-
 QCC:
 0. Similar to java.
-1. The 
+1. The word "route" makes me believe that is referring to a directory and the lack of a directory name afterwards leads me to say that it runs it from the current folder it is in. 
 2. Terminal
 3. It prints __main__ in the terminal and also an IP Address. 
 4. It will appear anywhere because I can see it.
