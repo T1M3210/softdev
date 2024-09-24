@@ -5,12 +5,12 @@ DISCO:
 <note any discoveries you made here... no matter how small!>
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. Similar to java.
+1. The 
+2. Terminal
+3. It prints __main__ in the terminal and also an IP Address. 
+4. It will appear anywhere because I can see it.
+5. In Java when you use methods for class
  ...
 
 INVESTIGATIVE APPROACH:
