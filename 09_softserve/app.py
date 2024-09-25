@@ -33,9 +33,9 @@ def randomOcc(str):
 
     for x in range(0, len(conInfo) - 1, 2):
         jobDict[conInfo[x]] = float(conInfo[x+1])
-        
-    for x in jobDict:
-        jobList.append(x)
+    
+    global jobList
+    jobList = list(jobDict.keys())
         
     return (random.choices(list(jobDict), weights=[6.1, 5.0, 2.7, 1.7, 0.9, 1.6, 0.8, 6.1, 1.7, 5.5, 2.8, 2.3, 8.3, 3.7, 4, 10.2, 15.1, 0.6, 4.3, 3.8, 6.1, 6.5]))
     #^^ chooses a random key (occupation) from jobDict
@@ -53,11 +53,7 @@ def hello_world():
     a = "What Departure Tim Ng, Danny Huang, Will Nzeuton"
     b = str(jobList)
     c = randomOcc(f)
-    return f" {a} <br><br> {b}"
-
-@app.route("/")
-def will():
-    return "gnaewoigaeoiw"
+    return f" {a} <br><br> {b} <br><br> {c}" # f string lets you display multiple strings in one line
 
 if __name__ == "__main__":      # true if this file NOT imported
     app.debug = True            # enable auto-reload upon code change
