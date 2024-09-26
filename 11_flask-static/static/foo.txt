@@ -11,3 +11,5 @@ NOTA BENE:
      to your neighbourhood Devos+Duckies your prediction
        --- BEFORE you run your test.
      
+Before clicking: I think that nothing will happen because it is a textfile and I am pretty sure you cannot just host a text file as it is an html file that is made using flask
+After clicking: 404 Not Found error shows up and confirms my hypothesis. Notably, it also returned '404 -' in the terminal

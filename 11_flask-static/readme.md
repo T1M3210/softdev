@@ -34,3 +34,10 @@ path/to/myworkshop$ tree 11_flask-static
 [related](https://ukulelemagazine.com/lessons/uke-lesson-3-chords-and-the-truth-country-songwriting-legend-harlan-howard)  
 [related](https://en.wikipedia.org/wiki/Plain_text)  
 
+Notes: 
+foo.txt:
+Before clicking: I think that nothing will happen because it is a textfile and I am pretty sure you cannot just host a text file as it is an html file that is made using flask
+After clicking: 404 Not Found error shows up and confirms my hypothesis. Notably, it also returned '404 -' in the terminal
+foo.html
+Before opening: I do not think you will be able to access this file as I do not think there is anything linking the file to the python code. 
+After opening: wow, I did not expect it to open, I guess the app.route refers to the whole folder and no that is not plaintext so it will show up on the html website.
