@@ -5,13 +5,13 @@
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q0:
-<your response here>
+If you remove render_template from the statement, it returns a NameError saying that render_template is undefined. This seemingly makes sense as we are calling in a function by returning it. 
 
 Q1:
-<your response here>
+I would bet all my money on it being http://127.0.0.1:5000/my_foist_template
 
 Q2:
-<your response here>
+'model_tmplt.html' displays the model_tmplt.html file in templates. foo="fooooo" makes the title of the page "fooooo". collection=coll displays the array 'coll'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
@@ -21,7 +21,7 @@ Q2:
 # Q0: What will happen if you remove render_template from the following statement?
 # (log prediction before executing...)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-from flask import Flask, render_template
+from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
