@@ -11,14 +11,22 @@
   <head>
     <title> {{ title }} </title>
   </head>
-
+    <h2>{{selected_job['Job Class']}}</h2>
   <body>
   <h1>Occupations CSV</h1>
   <h3>Team SegFault: Tim Ng, Princeden Hom</h3>
-    {% for item in collection %}
-     {{ item }}
-     <br>
-    {% endfor %}
+  <table>
+  {% for occupation in all_occupations %}
+  <tr> 
+  <th>
+  {{occupation['Job Class']}}
+  </th>
+  <th>
+  {{occupation['Percentage']}}
+  </th>
+  </tr>
+  {%endfor%}
+  </table>
   </body>
 
 </html>
