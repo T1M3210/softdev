@@ -19,7 +19,7 @@ with open("occupations.csv", mode = "r") as file:  # Opens CSV File
     for line in csvFile:   #Loops through CSV object
         if not(line[0] == "Job Class" or line[0] == "Total"):   #Takes out first and last row
             pSum += float(line[1])*10   #Calculates pSum value
-            all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "pSum": pSum})  #Creates dictionary and adds to list
+            all_occupations.append({"Job Class": line[0], "Percentage": float(line[1]), "Link": str(line[2]), "pSum": pSum})  #Creates dictionary and adds to list
 selected_job = ''        
 job = random.randint(0, 998)   #Random Integer
 for i in all_occupations:  #Loops through list
