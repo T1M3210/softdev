@@ -1,0 +1,26 @@
+Margie Cao, Tim Ng, Moyo Fagbuyi
+Systems Level Programming
+SoftDev 
+K14 -- more experimentation with flask
+2024-10-07
+Time Spent: 1
+ 
+DISCO:
+* when user submits user, we can make a function in a different python file run: goo()
+* ^ syntax: <filename>.<functionname>
+* 
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* what does #, methods=['GET', 'POST']) by the routes mean?
+* why is it specifically the username request that causes an error?
+* the print statements appear in terminal
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
