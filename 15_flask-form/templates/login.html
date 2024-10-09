@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 
+JTC - Jayden Zhang, Caden Khuu, Tim Ng
+SoftDev
+K15 - Flask-Form - Learning and Experimenting with Flask GET and POST Methods.
+2024-10-9
+time spent: 1 hrs
+-->
+
+<html>
+
+  <head>
+    <title> JTC </title>
+  </head>
+
+  <body>
+    <h1>
+      HEY YOU. YEAH YOU!! 
+    </h1>
+    <h3>
+      Enter your username in either submit box below to proceed.
+    </h3>
+    <form action="/auth" method="GET">
+      <input type="text" name="username">
+      <input type="submit" name="sub1" value="GET">
+    </form>
+    <br>
+    <form action="/auth" method="POST">
+      <input type="text" name="username">
+      <input type="submit" name="sub1" value="POST">
+    </form>
+  </body>
+
+</html>
