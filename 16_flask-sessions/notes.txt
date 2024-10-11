@@ -1,0 +1,8 @@
+server checks for cookies
+if none:
+	make cookies from user data
+	store cookies on user computer
+else:
+	get cookies
+	turn cookies into user data
+	
