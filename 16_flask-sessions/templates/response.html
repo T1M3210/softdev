@@ -9,14 +9,15 @@
 <html>
 
   <head>
-    <title> FEEDBACK PAGE </title>
+    <title> Your Page </title>
   </head>
-
   <body>
     <h1>
-      Thank you for submitting you data! We will now sell it :>
+      What's popping {{name}}
     </h1>
-    {{inputted}} <!--- displays stored iunputs -->
+    <form action="/logout" method="POST">
+      <button type="submit">Logout</button>
+    </form>
   </body>
 
 </html>
