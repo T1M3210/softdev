@@ -14,26 +14,26 @@ app.secret_key = ants.poop()
 
 @app.route("/",  methods=['GET','POST'])
 def disp_loginpage():
-    if 'username' and 'password' in session:
+    if 'username' and 'password' in session: # will immediately send you to response page if already logged
         return render_template('response.html')
     return render_template( 'login.html' ) #renders homepage
 
 
 @app.route("/auth", methods=['POST'])
 def post():
-    session['username'] = request.form['username']
+    session['username'] = request.form['username'] # saves username + password
     session['password'] = request.form['password']
     name = session['username']
     return render_template('response.html', name = name)
 
-#@app.route("/login", methods =['GET', 'POST'])
-#def disp_loggedin():
-#    return "hello"
-
 @app.route("/logout", methods = ['GET', 'POST'])
 def logout():
-    session.pop('username', None)
+    session.pop('username', None) # deletes username and password from cookies
     session.pop('password', None)
+    return render_template('logout.html')
+
+@app.route("/homepage", methods = ['GET', 'POST'])
+def redirect():
     return render_template('login.html')
 
 if __name__ == "__main__": #false if this file imported as module
