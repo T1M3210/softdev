@@ -15,7 +15,8 @@ app.secret_key = ants.poop()
 @app.route("/",  methods=['GET','POST'])
 def disp_loginpage():
     if 'username' and 'password' in session: # will immediately send you to response page if already logged
-        return render_template('response.html')
+        name = session['username']
+        return render_template('response.html', name = name)
     return render_template( 'login.html' ) #renders homepage
 
 
