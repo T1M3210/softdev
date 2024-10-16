@@ -9,20 +9,83 @@
 
 <html>
 <style>
-h1 {
-text-align: center
-
+header{
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
 }
+header h1 {
+  color: #f1f1f1;
+  font-size: 2em;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ddd;
+  color: #333;
+  }
+nav{
+  background-color: #555;
+  padding: 15px;
+  float: left;
+  width: 20%;
+}
+nav h2 {
+  font-size: 1.2em;
+  color: #ddd;
+  }
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  }
+
+nav ul li {
+  margin-bottom: 10px;
+  }
+main {
+  float: left;
+  width: 75%;
+  padding: 20px;
+  }
+main h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  }
+footer {
+  clear: both;
+  background-color: #555;
+  padding: 10px;
+  text-align: right;
+  color: #aaa;
+  font-size: 0.9em;
+  }
+
 </style>
   <head>
     <title> foo </title>
   </head>
 
   <body>
-    <h1>
+    <header>
+      <h1>
       h1 foo
     </h1>
-
+    </header>
+    <nav>
+      <h2>nav foo</h2>
+      <ul>
+        <li>dis</li>
+        <li>dat</li>
+        <li>de udda ting</li>
+      </ul>
+    </nav>
+    <main>
+      <h2>main foo heading</h2>
+      <p>something something yada yada</p>
+    </main>
+    <footer>
+      <p>Copyright © 2015 Clyde "Thluffy" Sinclair</p>
+    </footer>
   </body>
 
 </html>
