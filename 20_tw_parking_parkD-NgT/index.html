@@ -78,62 +78,99 @@
       Unlike traditional CSS, in which you have to write your own custom styles for every component, Tailwind lets you design your layout by combining pre-defined utility classes. This means you won’t need EXTREMELY LONG custom stylesheets and allows for website creation to take minutes instead of hours.
     </p>
     <p class="mt-4 text-lg text-gray-300 text-center">
-      Below we will show examples of features that Tailwind offers. 
+      Below we will show examples of features that Tailwind offers.
     </p>
   </div>
 
-  <!-- Tailwind CSS Features Table -->
-  <div id="features" class="px-6 py-16 max-w-7xl mx-auto">
-    <h2 class="text-4xl font-bold text-center text-white mb-8">Main Features of Tailwind CSS</h2>
-    <table class="min-w-full bg-white rounded-lg shadow-md">
-      <thead>
-        <tr>
-          <th class="px-6 py-4 text-left text-lg font-semibold text-gray-900">Feature</th>
-          <th class="px-6 py-4 text-left text-lg font-semibold text-gray-900">Example</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Feature 1: Utility-First -->
-        <tr class="border-t">
-          <td class="px-6 py-4 text-gray-700">Utility-First Classes</td>
-          <td class="px-6 py-4 text-gray-500">
-            <div class="bg-blue-500 text-white p-4 rounded-md">Example Button</div>
-          </td>
-        </tr>
-        <!-- Feature 2: Responsiveness -->
-        <tr class="border-t">
-          <td class="px-6 py-4 text-gray-700">Responsive Design</td>
-          <td class="px-6 py-4 text-gray-500">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="bg-green-500 p-6 rounded-md text-white">Small Grid</div>
-              <div class="bg-red-500 p-6 rounded-md text-white">Responsive Grid</div>
+  <!-- Features Section -->
+  <div id="features" class="bg-gray-800 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- Feature 1: Button Component -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            Tailwind makes it easy to create styled buttons. The example above shows a simple button with a hover effect and rounded corners. Tailwind offers many built-in utilities like padding (`px-6`, `py-3`), background color (`bg-indigo-600`), and hover states (`hover:bg-indigo-700`).
+          </p>
+        </div>
+        <div class="w-1/2">
+          <button class="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md focus:outline-none">
+            Example Button
+          </button>
+        </div>
+      </div>
+
+      <!-- Feature 2: Card Component -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            This card layout uses Tailwind's utilities like `max-w-sm`, `bg-white`, `rounded-lg`, and `shadow-lg` to create a clean, responsive card component with an image, title, and description.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Card image" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Card Title</h3>
+              <p class="mt-2 text-gray-600">Tailwind CSS lets you easily create card components with utilities like `max-w-sm`, `bg-white`, `rounded-lg`, and `shadow-lg`.</p>
             </div>
-          </td>
-        </tr>
-        <!-- Feature 3: Customization -->
-        <tr class="border-t">
-          <td class="px-6 py-4 text-gray-700">Custom Colors and Fonts</td>
-          <td class="px-6 py-4 text-gray-500">
-            <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white p-4 rounded-md">Custom Gradient</div>
-          </td>
-        </tr>
-        <!-- Feature 4: Component-Based -->
-        <tr class="border-t">
-          <td class="px-6 py-4 text-gray-700">Component-Based Design</td>
-          <td class="px-6 py-4 text-gray-500">
-            <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-lg">Card Component</div>
-          </td>
-        </tr>
-        <!-- Feature 5: Dark Mode -->
-        <tr class="border-t">
-          <td class="px-6 py-4 text-gray-700">Dark Mode</td>
-          <td class="px-6 py-4 text-gray-500">
-            <div class="bg-gray-800 text-white p-6 rounded-md">Dark Mode Example</div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Grid Layout -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            Tailwind's grid system allows you to create responsive grid layouts easily. Here's an example of a 3-column grid using Tailwind's grid classes like `grid-cols-1`, `sm:grid-cols-2`, and `lg:grid-cols-3`.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 1</div>
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 2</div>
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Responsive Image -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            With Tailwind, you can create responsive images by applying the `w-full` class to make the image width 100% of its container. The `h-auto` class ensures the height adjusts accordingly to maintain the aspect ratio.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <img src="800x400.png" alt="Responsive image" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+      </div>
+
+<!-- Feature 5: Toggle Switches -->
+<div class="flex items-center mb-12">
+  <div class="w-1/2 pr-8">
+    <p class="text-lg text-gray-300 mb-4">
+      Tailwind also allows you to easily create toggle switches. Below are examples of different toggle switches created with Tailwind.
+    </p>
   </div>
+  <div class="w-1/2 space-y-8">
+    <!-- Toggle Switch -->
+    <div class="flex items-center space-x-4">
+      <span class="text-gray-300">Toggle Switch:</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" class="sr-only peer" />
+        <!-- Toggle Background -->
+        <div class="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-indigo-600 peer-focus:ring-2 peer-focus:ring-indigo-500 peer-focus:ring-offset-2 transition">
+          <!-- Toggle Circle -->
+          <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full shadow transform peer-checked:translate-x-5 transition"></div>
+        </div>
+      </label>
+    </div>
+    
+  </div>
+</div>
+
 
   <!-- About Us Section -->
   <footer id="about" class="bg-gray-800 py-16 mt-20">
