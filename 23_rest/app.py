@@ -14,7 +14,6 @@ def readapi(file_path): # will read the txt file to get api key
     with open(file_path, 'r') as file:
         api_key = file.read().strip()
     return api_key
-#api key: kRD0mxb0BNq9WJ7xae0BbednkdAwdg2qBR3g0iWZ
 api_key = readapi("key_nasa.txt")
 
 @app.route("/")
